@@ -56,9 +56,9 @@ function constCheck() {
     console.log("nationalCode : ", nationalCode);
 
     /* 상수(값 변경 X) */
-    nationalCode = 1;
+    //nationalCode = 1;
     // Assignment to constant variable. -> 상수에 값을 대입 (오류)
-    console.log("nationalCode : ", nationalCode);
+    //console.log("nationalCode : ", nationalCode);
 
     /* 변수명 중복 X */
     // const nationalCode = 1;
@@ -104,7 +104,7 @@ function scopeTest1() // 함수 선언
         let num4 = 999;
         console.log("두번째 if : ", num4);
     }
-    console.log("num4 : ", num4);
+    // console.log("num4 : ", num4);
     // num4 is not defined (num4 변수가 정의되지 않음(없음))
 }
 
