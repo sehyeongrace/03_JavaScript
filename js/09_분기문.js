@@ -197,12 +197,30 @@ function startGame(){
         count++; // 정상 입력 시 카운트 증가
 
         // 정답 판별 -> break
+        if(value === answer){
+            alert("정답");
+            break;
+        }
 
 
         // UP / DOWN (단, 7회째면 실패)
+        if(value < answer){
+            alert("UP");
+        }
+
+        if(value > answer){
+            alert("DOWN");
+        }
+
+        if(count >= 7){
+            alert("실패");
+            break;
+        }
+
 
 
 
     } // while end
     // 함수 끝
 }
+
