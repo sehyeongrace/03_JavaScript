@@ -198,27 +198,21 @@ function startGame(){
 
         // 정답 판별 -> break
         if(value === answer){
-            alert("정답");
+            alert(`정답!!! ${answer} / 시도 횟수 : ${count}`);
             break;
         }
 
-
         // UP / DOWN (단, 7회째면 실패)
-        if(value < answer){
-            alert("UP");
+        if(count === 7){
+            alert(`7회 입력 실패! (정답:${answer})`);
+            break;
         }
 
         if(value > answer){
-            alert("DOWN");
+            alert(`DOWN (현재 ${count})회`);
+        }else{
+            alert(`UP (현재 ${count})회`);
         }
-
-        if(count >= 7){
-            alert("실패");
-            break;
-        }
-
-
-
 
     } // while end
     // 함수 끝
