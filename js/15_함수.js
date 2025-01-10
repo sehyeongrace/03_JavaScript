@@ -304,7 +304,6 @@ document.querySelector("#btn9").addEventListener("click", () => {
 
 /* 즉시 실행 함수 확인 */
 const str = "A"; // 전역 변수
-
 console.log(str); // A
 
 (function(){
