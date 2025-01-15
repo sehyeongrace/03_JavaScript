@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 150px;
+  height: 200px;
+  margin: 30px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+button {
+  width: 200px;
+  background-color: white
+}
+
+main{
+  display: flex;
+}
+
+main > section:first-child{
+  border-right: 2px solid #cccccc;
+  padding: 20px;
+}
+
+main > section:last-child{
+  font-size: smaller;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+#result{
+  text-align: center;
+  padding: 15px;
+  border-bottom: 2px solid #cccccc;
+}
+
+.number:hover {
+  background-color: lightgray;
+}
+
+.recordBtn {
+  border-color: green !important;
+  color: green;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.recordBtn:hover {
+  color: white;
+  background-color: green;
+}
+
+.reset-btn {
+  border-color: gray !important;
+  color: gray;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.reset-btn:hover {
+  color: white;
+  background-color: gray;
+}
+
+#phoneBook {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+}
+
+#phoneBook li {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+li .star {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+
+li .star.clicked {
+  color: orange;
+}
