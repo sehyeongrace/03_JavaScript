@@ -1,0 +1,25 @@
+  .number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+  }
+
+.number.selected{
+    background-color: rgba(205, 153, 205, 0.806);
+}
+
+  .container{
+    display: grid;
+    border: 1px solid black;
+    width: 230px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
